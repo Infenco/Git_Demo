@@ -45,7 +45,7 @@ body{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:medium;
-    transition: border,border-radius  1s ease-in-out 1s;
+    transition: border,border-radius  2s ease-in-out 2s;
 
 }
 /* nav bar color*/
