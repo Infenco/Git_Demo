@@ -2,13 +2,14 @@
     padding: 0px;
     margin: 0px;
 }
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
 body{
     background-color: black;
 }
 /*Background*/
 
 .main{
-    height: 70vh;
+    height: 700px;
     background-image: url(Assets/background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -19,7 +20,7 @@ body{
 .clone{
     background-color: black;
     width: 100%;
-    height: 70vh;
+    height: 700px;
     opacity: 0.64;
     /* border: 2px solid white; */
     position: absolute;
@@ -28,18 +29,19 @@ body{
 
 /*Nav bar*/
 .logo{
-    background-color: rgba(255, 255, 255, 0.315);
+    /* background-color: rgba(255, 255, 255, 0.315); */
     height:10vh ;
     position: relative;
     z-index: 10;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 80%;
     margin: auto;
 }
 .logo span img {
-    height: 50px;
+    height: 60px;
 }
 #opt{
     background-color: rgba(255, 255, 255, 0.089);
@@ -47,17 +49,96 @@ body{
     margin: 0px;
     font-weight: bolder;
     color: white;
-    padding: 5px 10px 5px 15px;
+    padding: 7px 15px 7px 18px;
 }
 .button button{
     background-color: red;
-    padding: 5px 10px 5px 10px;
+    padding: 6px 15px 6px 15px;
     color: white;
     font-weight: bolder;
     border:1px solid rgb(153, 150, 150);
+}
+/*middle part*/
+.text{
+    /* background-color: rgba(0, 255, 255, 0.241); */
+    height: 190px;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    font-family: 'Netflix Font', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainfont{
+    text-align: center ;
+    font-weight:900;
+}
+.mainfont :first-child{
+    font-size: 42px;
+}
+.mainfont :nth-child(3){
+    font-size: 35px;
+}
+.mainfont :nth-child(5){
+    font-size: 18px;
+    color: rgb(205, 19, 19);
+}
+.mainfont :nth-child(6){
+    font-size: 16px;
+    padding: 0%;
+}
+.mainfont :nth-child(9){
+    font-size: 16px;
+    line-height: 10px;
+    color: rgba(205, 205, 205, 0.603);
+}
+
+/*singin bar*/
+.log-bar{
+    /* background-color: rgba(255, 255, 255, 0.407); */
+    height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Netflix Font', sans-serif;
+
+}
+#text{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.singin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.singin button{
+    background-color: red;
+    padding: 6px 15px 6px 15px;
+    color: white;
+    font-weight: bolder;
+    border:1px solid rgb(153, 150, 150);
+}
+#email-main{
+    background-color: rgba(255, 255, 255, 0.192);
+    padding: 10px 60px 10px 10px;
+    border: 2px solid gray;
+    color: white;
+    font-size: larger;
+}
+#email-main::placeholder{
+    color: rgb(65, 62, 62);
 }
 
 /*Tranding part*/
 .tranding{
     background-color: rgba(255, 255, 255, 0.281);
+    
 }
