@@ -111,6 +111,9 @@ body{
     color: white;
     font-size: 12px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .singin{
     display: flex;
@@ -132,13 +135,125 @@ body{
     border: 2px solid gray;
     color: white;
     font-size: larger;
+    border-radius: px;
 }
 #email-main::placeholder{
     color: rgb(65, 62, 62);
 }
 
+.devid-x{
+    box-shadow: 50px 5px 50px rgb(255, 19, 235);
+}
+
+.devid{
+    background: linear-gradient(to right, #120101, #e924a7,rgb(244, 7, 244),#e924a7, #0a0007  );
+    height: 10px;
+    border-radius:20px 0px 20px 0px ;
+    box-shadow: 2px 2px 50px hotpink;
+    border-bottom-color:white;
+}
+
 /*Tranding part*/
-.tranding{
-    background-color: rgba(255, 255, 255, 0.281);
+.trand-text span{
+    font-size: 20px;
+    font-family: 'Netflix Font', sans-serif;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 900;
     
 }
+
+/*trending contain part that contain movies*/
+.tranding{
+    /* margin-top: 100px; */
+        /* background-color: rgba(255, 255, 255, 0.281); */
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        overflow: visible;
+        padding: 30px;
+}
+.trand-text{
+
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+}
+.trand-text span{
+    font-size: 35px;
+    padding: 20px;
+}
+
+
+.box{
+    display: flex;
+    gap: 10px;
+    
+}
+.item img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+/*mediaquaris*/
+@media screen and (max-width:1690px) {
+    .item img{
+        height:180px ;
+}
+}
+@media screen and (max-width:1290px) {
+    .item img{
+        height: 150;
+    }
+}
+@media screen and (max-width:600px) {
+    .item img{
+        height: 100px;
+    }
+}
+@media screen and (max-width:400px) {
+    .item img{
+        height: 95px;
+    }
+}
+
+/*a box im 4 box*/
+.box-main-txt{
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.flex-box{
+    background:  linear-gradient( 110deg ,  rgb(29, 16, 75) ,  rgb(16, 11, 61)  , rgb(12, 3, 33)  ,rgb(12, 7, 39)  ) ;
+    width: 400px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 5px gray ;
+}
+.model-text{
+    font-size: 30px;
+    padding: 20px;
+}
+.flex-font{
+    font-size: 18px
+}
+
+/*color and font*/
+.model-text  {
+    color: white;
+    font-family: 'Netflix Font', sans-serif;
+    font-weight: 900;
+
+}
+.box-main-txt div {
+    color: white;
+    font-family: 'Netflix Font', sans-serif;
+    padding: 20px;
+    font-weight: 900;
+}
+
+
+
+/*Media quaris*/
